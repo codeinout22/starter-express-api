@@ -5,7 +5,6 @@ app.use(express.static('public'));
 
 app.all('/', (req, res) => {
     console.log("Just got a request!")
-    setTimeout(()=>{}, 10000)
-    res.send('Yo!')
+    setTimeout(()=>{res.send('Yo!!!!')}, 10000)
 })
 app.listen(process.env.PORT || 3000)
